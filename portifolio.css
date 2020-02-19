@@ -1,0 +1,188 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {}
+
+h1 {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 46px;
+    color: darkturquoise;
+}
+
+a  {
+            color: white;
+            text-decoration: none;
+    font-family:  'Gloria Hallelujah', cursive; 
+    font-size: 25px
+    
+            
+        }
+     
+
+h2 {
+    color: white;
+    font-size: 30px;
+    padding-top: 100px;
+  margin-top: 0;
+    font-family: 'Gloria Hallelujah', cursive; 
+}
+#fa-guitar h2 {
+    margin-top: -20px
+}
+
+p.pad {
+    font-family: 'Changa', sans-serif;
+    color: aliceblue;
+
+    padding-bottom: 420px
+}
+
+
+body {
+    position: relative;
+    padding-top: px;
+    background-color: dimgrey;
+    text-align: center;
+    margin: 0;
+    
+}
+
+main {
+    margin: 55px 0px;
+}
+
+#about {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+    font-family: 'Changa', sans-serif;
+    color: white
+}
+
+
+
+nav {
+    background-color: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: none;
+    color:rgba(0, 0, 0, 0.4 );
+    font-size: 25px;
+    transition: all 0.5s;
+
+    display: inline-block;
+    padding: 1px 20px;
+    background-color: none;
+   
+    transition: all 0.5s;
+}
+
+.fas {
+
+    padding: 20px;
+    font-size: 60px;
+}
+
+nav a:hover {
+
+    background-color: gold;
+    border-top-left-radius: 79px;
+    border-bottom-left-radius: 160px;
+    border-top-right-radius: 88px;
+    border-top-style: hidden;
+    border-bottom-right-radius: 55px;
+    transition-delay: 0.2s;
+    transition: all 1.6s;
+
+}
+
+a.jumptop {position: fixed; bottom: 5px; left: 10px;}
+
+
+
+section {
+    min-height: 110vh;
+}
+
+section#fa-drum {
+        
+    background-image: linear-gradient(to bottom right, red, green);
+ }
+
+section#fa-guitar {
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+section#fa-record-vinyl {
+    background-image: linear-gradient(to bottom right, green, gray);
+}
+
+#contact {
+    
+    margin-left: 29px;
+}
+
+
+a {
+    
+}
+
+label {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: aliceblue
+}
+
+.fab {
+    font-size: 22px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding: 15px;
+}
+
+.fa-facebook-square {
+    color: whitesmoke;
+    text-align: center
+}
+
+.fa-instagram {
+    color: whitesmoke;
+    text-align: center
+}
+
+.fa-soundcloud {
+    color: whitesmoke;
+    text-align: center ;
+    
+        
+}
+
+.fa-facebook-square:hover { color: lawngreen;
+    
+}
+
+.fa-instagram:hover {color: lawngreen;}
+
+.fa-soundcloud:hover{color: lawngreen;}
+
+.fa-arrow-circle-up {color: whitesmoke;font-size: 20px;}
+
+.fa-arrow-circle-up:hover { color: lawngreen;
+    
+}
+
+
+footer {
+    text-align: right;
+   
+    background:none;position: sticky; 
+    margin-top: 35px
+   
+   

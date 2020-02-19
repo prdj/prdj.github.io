@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+
+
+
+
+    <link href="form.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="portifolio.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Alata|Bowlby+One+SC|Changa|Fredoka+One|Fruktur|Gloria+Hallelujah|Indie+Flower|Kalam|Marck+Script|Modak|Nanum+Pen+Script|Press+Start+2P|Rock+Salt|Sacramento|Satisfy|Seymour+One|Special+Elite&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <h1>PEDRO DANTAS</h1>
+
+    <p class="pad">Aspiring Web Developer and noisy Sound Designer</p>
+
+
+
+    <nav id="scroll">
+        <a href="#fa-drum" onmousedown="bleep2.pause(); bleep3.pause(); bleep.play()" onclick="shake()" class="firstid">
+            <i class="fas fa-drum"></i></a>
+        <a href="#fa-guitar" onmousedown="bleep2.play();bleep.pause(); bleep3.pause()" class="firstid" onclick="shake2()">
+            <i class="fas fa-guitar"></i></a>
+        <a href="#fa-record-vinyl" onmousedown="bleep3.play(); bleep.pause(); bleep2.pause()" class="firstid" onclick="shake3()">
+            <i class="fas fa-record-vinyl"></i></a>
+    </nav>
+
+
+
+
+    <main>
+
+        <section id="fa-drum">
+            <h2 id="fa-drum">About</h2>
+            <p id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint mollitia explicabo, sapiente aliquid illo. Officia eum veritatis sapiente totam quia illo iste quis. Dolor voluptas, consequuntur ea consequatur totam, error. ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sunt odit, nostrum possimus iure commodi fugiat quas incidunt alias omnis hic placeat distinctio harum in quia aut beatae quam quod. ipsum dolor sit amet, consectetur adipisicing elit. Temporibus commodi explicabo perferendis hic quis debitis deserunt aperiam adipisci ipsam, reiciendis labore delectus vitae quo, odit dolores voluptas dignissimos possimus voluptatibus.
+            </p>
+        </section>
+        <section id="fa-guitar">
+            <h2>C.V</h2>
+            <p id="about"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, omnis totam repudiandae non magnam. Facilis mollitia saepe cumque voluptas similique explicabo corporis nesciunt cupiditate recusandae voluptatem, deleniti suscipit error qui. ipsum dolor sit amet, consectetur adipisicing elit. Nam suscipit consequuntur sequi illo architecto nisi quod reiciendis error obcaecati ipsam numquam, aperiam? Itaque, hic, eveniet possimus aliquam ducimus error minima. ipsum dolor sit amet, consectetur adipisicing elit. Molestiae placeat, est provident tenetur, doloribus expedita earum itaque quis voluptatibus nesciunt iste hic eligendi impedit dolores pariatur exercitationem? Doloribus, a, iure.</p>
+
+            <a href="CV%20Pedro%20Rodrigues%20Dantas%202.pdf" target="_blank"="cv">Download my C.V. here.</a>
+
+
+        </section>
+
+        <section id="fa-record-vinyl">
+            <h2 id="contact">Contact</h2>
+            <form action="">
+                <label>First Name</label>
+                <input type="text" name="firstname" required placeholder=""><br><br>
+
+                <label>Last Name</label>
+                <input type="text" name="lastname" required placeholder=""><br><br>
+
+                <label>Email</label>
+                <input type="email" name="email" required><br><br>
+
+                <label>Your
+                    Message</label>
+                <textarea name="message" required></textarea><br><br>
+
+                <input type="checkbox" name="news" id="news" checked>
+                <label for="news">Send me your newsletter :)</label><br><br>
+
+                <label>Country</label>
+                <select name="country">
+                    <option value="">Choose your country.</option>
+                    <option value="fr">France</option>
+                    <option value="es">Spain</option>
+                    <option value="de">Germany</option>
+                </select><br><br>
+
+                <!--
+       <input type="radio" name="gender" value="female"><label>Female</label><br>
+       
+       <input type="radio" name="gender" value="male"><label>Male</label><br><br>
+-->
+
+                <input type="submit" value="SEND"><br><br>
+
+                <!-- Some more input types -->
+
+                <!--
+       <input type="date"><br>
+       <input type="color"><br>
+       <input type="password"><br>
+       <input type="range" min="1" max="10"><br>
+       <input type="image" src="" formaction="">
+-->
+            </form>
+            <footer>
+                <a href="http://facebook.com" target="_blank">
+                    <i class="fab fa-facebook-square"></i></a>
+
+                <a href="http://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i></a>
+
+                <a href="https://soundcloud.com/pedro-dantas-301604883" target="-blank"><i class="fab fa-soundcloud"></i></a>
+
+
+
+            </footer>
+
+        </section>
+        <a class="jumptop" href="#top" onmousedown="bleep2.pause(); bleep3.pause(); bleep.pause()" onclick="shake()"><i class="fas fa-arrow-circle-up"></i></a>
+
+
+
+
+
+
+    </main>
+    <script>
+        //        var prevScrollpos = window.pageYOffset;
+        //            window.onscroll = function() {
+        //        var currentScrollPos = window.pageYOffset;
+        //        if (prevScrollpos > currentScrollPos) {
+        //            document.getElementById("scroll").style.top = "0px";
+        //        } else {
+        //           document.getElementById("scroll").style.top = "-95px";
+        //  }
+        //   prevScrollpos = currentScrollPos;
+        //}
+
+        var bleep = new Audio();
+        bleep.src = "drumsweb.mp3";
+        var bleep2 = new Audio();
+        bleep2.src = "guitarweb.mp3";
+        var bleep3 = new Audio();
+        bleep3.src = "vinyl.mp3";
+
+        let firstid1 = document.getElementsByClassName("firstid")[0];
+        let firstid2 = document.getElementsByClassName("firstid")[1];
+        let firstid3 = document.getElementsByClassName("firstid")[2];
+        let notChanged = true;
+        let notChanged2 = true;
+        let notChanged3 = true;
+
+        function shake() {
+            if (notChanged) {
+                firstid1.setAttribute("style", "transform: rotate(360deg);");
+                notChanged = false;
+            } else {
+                firstid1.setAttribute("style", "transform: rotate(0deg);");
+
+                notChanged = true;
+            }
+        }
+
+        function shake2() {
+            if (notChanged2) {
+                firstid2.setAttribute("style", "transform: rotate(360deg);");
+                notChanged2 = false;
+            } else {
+                firstid2.setAttribute("style", "transform: rotate(0deg);");
+
+                notChanged2 = true;
+            }
+        }
+
+        function shake3() {
+            if (notChanged3) {
+                firstid3.setAttribute("style", "transform: rotate(360deg);");
+                notChanged3 = false;
+            } else {
+                firstid3.setAttribute("style", "transform: rotate(0deg);");
+
+                notChanged3 = true;
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
